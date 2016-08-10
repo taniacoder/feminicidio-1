@@ -19490,13 +19490,13 @@ function responsive() {
 
 	$(window).load(function() {
 	    responsive();
-	    obtener_modal(ancho)
+	    &&obtener_modal(ancho)
 	    poner_modal()
 	});    
 $(window).resize(function() {
   responsive();
 	});
-
+/*
 	function poner_modal() {
 	    var chichico = document.getElementsByClassName("chichico")
 	    for (var i = 0; i < chichico.length; i++) {
@@ -19589,7 +19589,7 @@ $(window).resize(function() {
 	        redes.innerHTML = '<div class="redes-sociales"><!--Twitter--><a href="https://twitter.com/share" class="twitter-share-button">Tweet</a> <!--Twitter--><!--facebook--><div class="fb-like" data-href="" data-layout="standard" data-action="like" data-size="small" data-show-faces="true" data-share="true"></div><!--facebook--></div>'
 	        poner_redes[z].appendChild(redes)
 	    }
-	}
+	} */
 
 $(function() {
 

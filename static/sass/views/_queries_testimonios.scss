@@ -1,0 +1,67 @@
+@media only screen and (min-width: 1200px) {
+    .container {
+        width: 1170px;
+    }
+    .img-foto {
+        height: 325px;
+    }
+}
+@media only screen and (min-width: 1342px) {
+    .container {
+    width: 1311px;
+    }
+    .img-foto {
+        height: 325px;
+    }
+}
+@media only screen and (max-width: 1200px) {
+
+    .text-modal{
+    position:relative;
+    right: 0;
+    }
+    .img-agresor{
+    width: 100%;
+    }
+
+}
+@media (min-width: 992px) and (max-width: 1200px){
+        .img-agresor{
+    width: 50%;
+    }
+    .container{
+        width: 750px;
+    }
+}
+
+@media only screen and (max-width: 767px) {
+
+    .logo {
+    width: 100%;
+    margin: auto;
+    }
+    #cuadrados {
+        display: none;
+    }
+     #myCarousel {
+    display: inherit; 
+     }
+     .mg-a{
+    width: 50%;
+         }
+    .modal-dialog {
+    width: 100%;
+    }
+    .img-agresor{
+    width: 50%;
+    }
+}
+
+@media (max-width: 768px) {
+    .intro {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 3%; 
+    }
+
+}
