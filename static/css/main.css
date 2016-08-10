@@ -5898,6 +5898,9 @@ body {
 .la-republica {
   background-color: #F0104E; }
 
+body {
+  overflow-x: hidden; }
+
 .cifras {
   color: #333333;
   font-weight: 700;
