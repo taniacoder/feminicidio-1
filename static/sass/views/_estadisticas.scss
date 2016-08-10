@@ -1,9 +1,6 @@
 body{
 	overflow-x: hidden; 
 }
-.container{
-	width: 75%;
-}
 
 .cifras{
 	color: $black;
@@ -45,4 +42,9 @@ body{
 			}
 	   left: -14px;
 	}	
+}
+@media screen and (min-width: 1300px){
+.container{
+	width: 75%;
+}	
 }

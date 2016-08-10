@@ -5901,9 +5901,6 @@ body {
 body {
   overflow-x: hidden; }
 
-.container {
-  width: 75%; }
-
 .cifras {
   color: #333333;
   font-weight: 700;
@@ -5937,3 +5934,7 @@ body {
       font-size: 1rem; }
     #legend th {
       font-size: 0.8rem; } }
+
+@media screen and (min-width: 1300px) {
+  .container {
+    width: 75%; } }
