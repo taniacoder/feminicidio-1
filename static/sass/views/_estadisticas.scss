@@ -1,6 +1,9 @@
 body{
 	overflow-x: hidden; 
 }
+.container{
+	width: 75%;
+}
 
 .cifras{
 	color: $black;
@@ -19,16 +22,17 @@ body{
 .lead{
 	color: $razzmatazz;
 }
-.est-2{
-	margin-bottom: 72px;
-}
+
 @media screen and (max-width: 767px) {
 	#legend {
 			tbody{
 			font-size: 1rem;
 			}
 	   left: -63px;
-	}	
+	}
+	.est-2{
+	margin-bottom: 72px;
+}	
 }
 
 @media screen and (max-width: 410px) {
