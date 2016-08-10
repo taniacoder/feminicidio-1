@@ -1,0 +1,40 @@
+.cifras{
+	color: $black;
+	font-weight: 700;
+    font-size: 6rem;
+    @include padding(21px, 7px, 0px, 7px);
+    @media screen and (max-width: 767px) {
+		font-size: 4rem;
+    }
+}
+
+#estadisticas{
+	font-family: $font_Bitter;
+}
+
+.lead{
+	color: $razzmatazz;
+}
+.est-2{
+	margin-bottom: 72px;
+}
+@media screen and (max-width: 767px) {
+	#legend {
+			tbody{
+			font-size: 1rem;
+			}
+	   left: -63px;
+	}	
+}
+
+@media screen and (max-width: 410px) {
+	#legend {
+			tbody{
+			font-size: 1rem;
+			}
+			th{
+			font-size: 0.8rem;
+			}
+	   left: -14px;
+	}	
+}

@@ -1,0 +1,22 @@
+html, body, header{
+	@extend .hero-image;
+}
+
+
+body{
+	font-family: $font_Bitter;
+	font-size: 16px;
+}
+
+.bg-header{
+	background: url(../images/fondo.jpg) no-repeat;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    @extend .hero-image;
+}
+
+.la-republica{
+	background-color: $razzmatazz;
+}

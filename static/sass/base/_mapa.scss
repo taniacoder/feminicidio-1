@@ -1,0 +1,103 @@
+
+//@extend-elements
+//original selectors
+//.legend td, .legend th, .hoverinfo td, .hoverinfo th
+%extend_1 {
+	padding: 10px 5px;
+	display: table-cell;
+	vertical-align: middle;
+	//Instead of the line below you could use @include border-radius($radius, $vertical-radius)
+	border-radius: 2px;
+}
+
+//original selectors
+//.legend .femicide, .hoverinfo .femicide
+%extend_2 {
+	background-image: $url_0;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 30px;
+}
+
+//original selectors
+//.legend .attempted, .hoverinfo .attempted
+%extend_3 {
+	background-image: $url_1;
+	background-size: auto 100%;
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 30px;
+}
+
+
+main {
+	flex: 1 0 auto;
+}
+.hoverinfo {
+	padding: 0!important;
+	td {
+		@extend %extend_1;
+	}
+	th {
+		@extend %extend_1;
+	}
+	.femicide {
+		@extend %extend_2;
+	}
+	.attempted {
+		@extend %extend_3;
+	}
+}
+.legend {
+	td {
+		@extend %extend_1;
+	}
+	th {
+		@extend %extend_1;
+	}
+	.femicide {
+		@extend %extend_2;
+	}
+	.attempted {
+		@extend %extend_3;
+	}
+}
+#map-canvas {
+	width: 280px;
+	height: 392px;
+	position: relative;
+	overflow: visible;
+	display: block;
+	margin: 0 auto;
+	bottom: 21px;
+	svg {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		width: auto;
+		height: auto;
+		//Instead of the line below you could use @include transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+		transform: translate(-50%, -50%);
+	}
+}
+
+#legend {
+	position: absolute;
+	bottom: 0;
+	left: -21px;
+	max-width: 220px;
+}
+
+@media only screen and(min-width: 768px) {
+	#map-canvas {
+		width: 400px;
+		height: 560px;
+	}
+}
+@media only screen and(min-width: 993px) {
+	#map-canvas {
+		width: 500px;
+		height: 690px;
+	}
+}

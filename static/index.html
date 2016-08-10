@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="es">
+
+<head>
+    <title>Ni una menos</title>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="feminicidio, sociedad, ni una menos">
+    <meta name="description" content="descripcion o informacion de la pagina con frases clave">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!--twitter card photos-->
+    <meta name="twitter:card" content="gallery" />
+    <meta name="twitter:site" content="@fodorstravel" />
+    <meta name="twitter:creator" content="@fodorstravel" />
+    <meta name="twitter:title" content="America's Best Small Towns">
+    <meta name="twitter:description" content="For the second year in a row, we've compiled a list that highlights some of the best places in the country you don't hear about every day.">
+    <meta name="twitter:url" content="http://www.fodors.com/news/photos/americas-best-small-towns" />
+    <meta name="twitter:image0" content="http://www.fodors.com/ee/files/slideshows/telluride-resized.jpg">
+    <meta name="twitter:image1" content="http://www.fodors.com/ee/files/slideshows/shutterstock_18216130-resized.jpg">
+    <meta name="twitter:image2" content="http://www.fodors.com/ee/files/slideshows/3-marfa-texas.jpg">
+    <meta name="twitter:image3" content="http://www.fodors.com/ee/files/slideshows/4-paia-maui-hawaii.jpg">
+    <!--fin de twitter card photos-->
+    <link href="css/main.min.css" rel="stylesheet" media="screen" />
+    <link href="css/font-awesome.min.css" rel="stylesheet" media="screen" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.9.1/jquery-ui.min.js"></script>
+</head>
+
+<body>
+    <header class="bg-header">
+        <div class="wt-xs">
+            <div class="la-republica"></div>
+        </div>
+    </header>
+    <div id="estadisticas">
+        <div class="container">
+            <div class="row">
+                <h2 class="cifras text-center">LAS CIFRAS DEL MIEDO</h2>
+                <div class="col-sm-6 col-sm-push-6" data-attr="0">
+                    <div>
+                      <p class="lead">
+                                    En los últimos siete años, 921 mujeres peruanas han estado a punto de morir por tentativa de feminicidio.
+                      </p>
+                      <p class="text-muted">
+                                    Hasta junio del 2016, Lima registró el mayor número de casos por tentativa de feminicidio con 36 víctimas. En segundo lugar, Húanuco con 13 víctimas y luego Junín con 10.
+                      </p>
+                      <p class="text-muted">
+                                    Del 2009 al 2016, Lima se ha mantenido como la ciudad con mayor registro de estos casos con 570 víctimas, mientras que Arequipa le sigue con 120 y Junín con 103 víctimas.
+                      </p>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-sm-pull-6">
+                    <div id="map-canvas">
+                        <table id="legend" class="legend">
+                            <thead>
+                                <tr>
+                                    <th>Cuadro estadístico del 2009 al 2016</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>
+                                        <div class="femicide">
+                                            Feminicidio
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>
+                                        <div class="attempted">
+                                            Intento de feminicidio
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                        </div>
+                </div>
+                  <div class="col-xs-12">
+                            <p class="lead">
+                                En el 2016, el número de mujeres victimas de tentativa de feminicidio ascendió a 20 por mes.
+                            </p>
+                            <p class="text-muted">
+                                Desde el año 2011, año en que se promulgó la ley de feminidios, las denuncias y registros se han triplicado a nivel nacional según el Ministerio de la Mujer. El 10% de víctimas son niñas o adolescentes, mientras que el 89% son mujeres adultas. Los casos de víctimas gestantes, asciende a 5%.
+                            </p>
+                  </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12 col-sm-9" id="cuadro">
+                            <p class="title-chart"><em>Promedio mensual por año.<span> Periodo 2009-2016</span></em></p>
+                            <div class="panel-body">
+                                <div id="morris-area-chart" style="height: 330px;"></div>
+                            </div>
+                        </div>
+                        <div class="col-xs-12 col-sm-3" data-attr="1">
+                            <div class="est-2">
+                                <img src="images/est-2.svg" class="img-responsive" alt="cuadro de porcentaje de feminicidio" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <script type="text/javascript" src="js/bootstrap.js"></script>
+            <script type="text/javascript" src="js/d3.js"></script>
+            <script type="text/javascript" src="js/topojson.js"></script>
+            <script type="text/javascript" src="js/datamaps.per.js"></script>
+            <script type="text/javascript" src="js/app.js"></script>
+            <script type="text/javascript" src="js/raphael.js"></script>
+            <script type="text/javascript" src="js/morris.js"></script>
+            <script type="text/javascript" src="js/morris-data.js"></script>
+            <script type="text/javascript" src="js/main.js"></script>
+            <div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+            <div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+            <div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+            <div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+            <div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+            <div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+            <div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+            <div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+            <div class="modal modal-transparent fade" id="modal-transparent" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true"></div>
+<!-- Go to www.addthis.com/dashboard to customize your tools -->
+            <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-57a3ac220fa8494c"></script>
+</body>
+
+</html>
