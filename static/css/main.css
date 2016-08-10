@@ -5901,6 +5901,9 @@ body {
 body {
   overflow-x: hidden; }
 
+.container {
+  width: 75%; }
+
 .cifras {
   color: #333333;
   font-weight: 700;
@@ -5919,14 +5922,13 @@ body {
 .lead {
   color: #F0104E; }
 
-.est-2 {
-  margin-bottom: 72px; }
-
 @media screen and (max-width: 767px) {
   #legend {
     left: -63px; }
     #legend tbody {
-      font-size: 1rem; } }
+      font-size: 1rem; }
+  .est-2 {
+    margin-bottom: 72px; } }
 
 @media screen and (max-width: 410px) {
   #legend {
